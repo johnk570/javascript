@@ -32,12 +32,16 @@
         processing.rotate = function (angle) {
             rotateFn(processing.radians(angle));
         };
-
+<center>
         with (processing) {
 
             background(23, 230, 50);
           
+            ellipse(200, 200, 300, 350);
+          
+            fill(247, 255, 0);
             ellipse(200, 200, 250, 300);
+          
             fill(255, 0, 0);
             ellipse(200, 250, 182, 60);
           
@@ -46,6 +50,7 @@
             ellipse(250, 150, 30, 30);
 
         }
+</center>
         if (typeof draw !== 'undefined') processing.draw = draw;
     });
   </script>
