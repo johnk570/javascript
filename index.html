@@ -38,6 +38,8 @@
 
 var x = 100;
 var y = 500;
+var a = 200;
+var b = 100;
 background(245, 234, 84);         
 draw = function() {
     
@@ -60,8 +62,29 @@ ellipse(x, y, 100, 50); // mouth
 rect(x - 50, y - 50, 10, 10); // left pupil
 rect(x + 50, y - 50, 10, 10); // right puil
   
-    x = x + 2;
-    y = y - 0.85;
+    x = x - 2;
+    y = y + 0.85;
+  
+noStroke();
+fill(30, 204, 91); // a nice froggy green!
+
+ellipse(a, b, 200, 100); // face
+ellipse(a - 50, b - 50, 40, 40); // left eye socket
+ellipse(a + 50, b - 50, 40, 40); // right eye socket
+
+fill(255, 255, 255); // for the whites of the eyes!
+ellipse(a - 50, b - 50, 30, 30); // left eyeball
+ellipse(a + 50, b - 50, 30, 30); // right eyeball
+
+fill(0, 0, 0); // black 
+ellipse(a, b, 100, 50); // mouth
+
+rect(a - 50, b - 50, 10, 10); // left pupil
+rect(a + 50, b - 50, 10, 10); // right puil
+  
+    a = a + 0.5;
+    b = b - 2; 
+  
 };
 
         }
