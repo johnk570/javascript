@@ -35,18 +35,21 @@
 
         with (processing) {
 
-
+var speed = 0.5;
+          
+draw = function() {
+    
+    // all lines of code inside here will be run repeatedly
+  
 var x = 1;
 var y = 600;
 var a = 1;
 var b = 1;
 var mouthSize1 = 1; 
 var mouthSize2 = 100; 
-var bgColor = 1;          
+var bgColor = 1;  
+
   
-draw = function() {
-    
-    // all lines of code inside here will be run repeatedly
           
 draw = function() {
     
@@ -69,7 +72,7 @@ ellipse(x, y, 100, mouthSize1); // mouth
 rect(x - 50, y - 50, 10, 10); // left pupil
 rect(x + 50, y - 50, 10, 10); // right puil
   
-    x = x + 2;
+    x = x + speed + 1;
     y = y - 0.85;
     mouthSize1 = mouthSize1 + 0.13;
   
@@ -91,12 +94,15 @@ rect(a - 50, b - 50, 10, 10); // left pupil
 rect(a + 50, b - 50, 10, 10); // right puil
   
     a = a + 1.8;
-    b = b + 1; 
+    b = b + speed; 
     mouthSize2 = mouthSize2 - 0.2;
   
     bgColor = bgColor + 0.5;
   
 };
+  
+speed = speed + 0.5;
+  
 };
         }
         if (typeof draw !== 'undefined') processing.draw = draw;
