@@ -41,11 +41,11 @@ var y = 600;
 var a = 1;
 var b = 1;
 var mouthSize = 10          
-background(245, 234, 84);         
+        
 draw = function() {
     
     // all lines of code inside here will be run repeatedly
-
+background(245, 234, 84); 
 noStroke();
 fill(30, 204, 91); // a nice froggy green!
 
@@ -65,7 +65,7 @@ rect(x + 50, y - 50, 10, 10); // right puil
   
     x = x + 2;
     y = y - 0.85;
-    mouthSize = mouthSize + 1;
+    mouthSize = mouthSize + 0.1;
   
 noStroke();
 fill(255, 0, 115); // a nice froggy RED!
