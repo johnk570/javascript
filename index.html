@@ -10,7 +10,7 @@
   <script>
     var canvas = document.getElementById("canvas");
     var processing = new Processing(canvas, function(processing) {
-        processing.size(1000, 600);
+        processing.size(1200, 600);
         processing.background(0xFFF);
 
         var mouseIsPressed = false;
@@ -47,7 +47,7 @@ var bgColor = 1;
 draw = function() {
     
     // all lines of code inside here will be run repeatedly
-background(bgColor, bgColor, bgColor); 
+background(100, bgColor, bgColor); 
 noStroke();
 fill(30, 204, 91); // a nice froggy green!
 
