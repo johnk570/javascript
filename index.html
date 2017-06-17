@@ -47,7 +47,7 @@ var bgColor = 1;
 draw = function() {
     
     // all lines of code inside here will be run repeatedly
-background(bgColor, bgColor + 100, bgColor + 40); 
+background(bgColor, bgColor, bgColor); 
 noStroke();
 fill(30, 204, 91); // a nice froggy green!
 
@@ -90,7 +90,7 @@ rect(a + 50, b - 50, 10, 10); // right puil
     b = b + 1; 
     mouthSize2 = mouthSize2 - 0.2;
   
-    bgColor = bgColor + 5;
+    bgColor = bgColor + 0.5;
   
 };
 
