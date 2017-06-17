@@ -35,14 +35,14 @@
 
         with (processing) {
 
-background(245, 234, 84);
-var x = 200;
+
+var x = 100;
 var y = 250;
           
 draw = function() {
     
     // all lines of code inside here will be run repeatedly
-
+background(245, 234, 84);
 noStroke();
 fill(30, 204, 91); // a nice froggy green!
 
@@ -59,9 +59,8 @@ ellipse(x, y, 100, 50); // mouth
 
 rect(x - 50, y - 50, 10, 10); // left pupil
 rect(x + 50, y - 50, 10, 10); // right puil
-
-    
-    x = x + 1;
+  
+    x = x + 5;
 };
 
         }
