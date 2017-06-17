@@ -36,6 +36,11 @@
         with (processing) {
 
 background(245, 234, 84);
+
+draw = function() {
+    
+    // all lines of code inside here will be run repeatedly
+
           
 var x = 200;
 var y = 250;
@@ -57,6 +62,9 @@ ellipse(x, y, 100, 50); // mouth
 rect(x - 50, y - 50, 10, 10); // left pupil
 rect(x + 50, y - 50, 10, 10); // right puil
 
+    
+    x = x + 1;
+};
 
         }
         if (typeof draw !== 'undefined') processing.draw = draw;
