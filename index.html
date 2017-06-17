@@ -12,11 +12,13 @@
 
 </head>
 <body>
+  <h1><span style="font-family:courier new,courier,monospace;"><span style="color:#FF0000;"><span style="font-size:48px;">ZOMBIE-FROGS</span></span></span></h1>
+
   <canvas id="canvas"></canvas>
   <script>
     var canvas = document.getElementById("canvas");
     var processing = new Processing(canvas, function(processing) {
-        processing.size(1300, 600);
+        processing.size(1250, 600);
         processing.background(0xFFF);
 
         var mouseIsPressed = false;
@@ -55,7 +57,7 @@ var bgColor = 1;
 draw = function() {
     
     // all lines of code inside here will be run repeatedly
-background(200, bgColor, bgColor); 
+background(72, 249, 219); 
   
 var position = 335;
 textSize(16);
@@ -73,13 +75,13 @@ text("   / V \\ ", mouseX - 1, mouseY + 30);
 text(" (_/^\\_)", mouseX, mouseY + 42);
   
 noStroke();
-fill(30, 204, 91); // a nice froggy green!
+fill(109, 77, 151); // purple
 
 ellipse(x, y, 200, 100); // face
 ellipse(x - 50, y - 50, 40, 40); // left eye socket
 ellipse(x + 50, y - 50, 40, 40); // right eye socket
 
-fill(255, 255, 255); // for the whites of the eyes!
+fill(235, 96, 101); // for the whites (red) of the eyes!
 ellipse(x - 50, y - 50, 30, 30); // left eyeball
 ellipse(x + 50, y - 50, 30, 30); // right eyeball
 
@@ -87,20 +89,20 @@ fill(0, 0, 0); // black
 ellipse(x, y, 100, mouthSize1); // mouth
 
 rect(x - 50, y - 50, 10, 10); // left pupil
-rect(x + 50, y - 50, 10, 10); // right puil
+rect(x + 50, y - 50, 10, 10); // right pupil
   
     x = x + 2;
     y = y - 0.85;
     mouthSize1 = mouthSize1 + 0.13;
   
 noStroke();
-fill(255, 0, 115); // a nice froggy RED!
+fill(153, 76, 0); // a nice froggy brown!
 
 ellipse(a, b, 200, 100); // face
 ellipse(a - 50, b - 50, 40, 40); // left eye socket
 ellipse(a + 50, b - 50, 40, 40); // right eye socket
 
-fill(255, 255, 255); // for the whites of the eyes!
+fill(235, 96, 101); // for the whites (red) of the eyes!
 ellipse(a - 50, b - 50, 30, 30); // left eyeball
 ellipse(a + 50, b - 50, 30, 30); // right eyeball
 
@@ -121,6 +123,8 @@ rect(a + 50, b - 50, 10, 10); // right puil
         if (typeof draw !== 'undefined') processing.draw = draw;
     });
   </script>
+  <p><span style="font-size:12px;">Music: <a href="http://www.bensound.com" target="_blank">http://www.bensound.com</a></span></p>
+
 </body>
 </html>
 
